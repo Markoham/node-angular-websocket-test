@@ -1,0 +1,3 @@
+<div id="area" ng-mousemove="drag($event)" ng-mouseup="stop()">
+    <div ng-repeat="elem in elements" class="fly" ng-mousedown="start(elem, $event)" style="top: {{elem.top}}px; left: {{elem.left}}px" draggable="true">{{elem.text}}</div>
+</div>
