@@ -96,4 +96,4 @@ io.on('connection', function(socket){
 });
 
 //module.exports = app;
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
